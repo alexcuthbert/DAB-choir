@@ -1,0 +1,225 @@
+/*
+
+Theme Name: Practice
+Author: Alex 
+Description: Practicing WP
+Version: 0.0.1
+
+
+#B33951 - Bright maroon
+#F6F7F8 - cultured (off white)
+
+
+*/
+
+/* Tiny screens - mobile users */
+
+body {
+	background-color: #F6F7F8;
+}
+p, li{
+	color: dimgrey;
+	font-size: 1.15em;
+}
+.primary, .btn-primary, .btn-outline-primary, a, .blog-nav li a {
+	color: #B33951;
+	border-color: #B33951;
+}
+
+.primary:hover, .btn-primary:hover, .btn-outline-primary:hover {
+	color: #F6F7F8;
+	border-color: #B33951;
+	background-color: #B33951;
+}
+
+footer {
+	background-color: #54494B;
+	padding: 1em;
+}
+
+a:hover {
+	color: #F6F7F8;
+}
+
+header {
+	margin: 0em 0em;
+	padding: 1% 3%;
+}
+
+.home-content {
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.9), 
+		rgba(0, 0, 0, 0.6)), 
+		url('../images/cropped-dhc1-1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px; 
+	padding: 2em 4em
+}
+
+.home-content p {
+		color: white;
+}
+
+.wpcf7-submit{
+
+	color: white;
+	background-color: #007bff;
+	border: 2px solid white;
+	border-radius: 30px;
+	padding: 8px 20px;
+	width: 35%;
+}
+
+.wpcf7-text {
+	border-radius: 30px;
+	border: 2px solid #d7d7d7;
+}
+
+.wpcf7-submit:hover{
+
+	color: #007bff;
+	background-color: white;
+	border: 2px solid #007bff;
+	border-radius: 30px;
+	padding: 8px 20px;
+}
+.content-right {
+	text-align: right;
+}
+
+.foot{
+	padding: 0em 4em;
+
+}
+.foot li {
+	color: #D7D5D5;
+}
+
+.side {
+	padding-left: 6em ;
+}
+
+.logo {
+	max-width: 80px;
+}
+h1, h2, h3, h4 {
+	color: dimgrey;
+}
+
+
+h2.jumbo{
+	font-size:3em;
+	color: azure;
+}
+
+p.jumbo, li.jumbo, h3.jumbo, h1.jumbo {
+	color: white;
+}
+
+.jumbotron, .front-banner {
+	/*text-align: right;*/
+	padding: 4em 6em;
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.7), 
+		rgba(0, 0, 0, 0.2)), 
+		url('../images/cropped-dhc1-1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+
+.blog-nav li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 400;
+}
+
+
+
+.page {
+	margin : 0em 0em;
+}
+
+li.pag {
+	list-style-type: none;
+	padding: 10px 15px;
+	position: relative;
+	display: inline-block;
+	margin: 15px;
+}
+
+.style-title {
+	padding: 0px auto;
+}
+
+
+.wp-block-contact-form-7-contact-form-selector
+{
+    padding: 1.5em 2em;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #d1d1d1;
+
+
+}
+input {
+	width:100%;
+}
+ .carousel-inner {
+ 	max-height: 300px;
+ 	margin: auto;
+ }
+
+.sidebar-module {
+	margin: 3em 0em 5em 0em;
+}
+
+/* small, not tiny */
+@media only screen and (min-width: 576px) {
+	.logo {
+		max-width: 100px;
+	}
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) {
+	`.wp-block-contact-form-7-contact-form-selector {
+	    padding: 1.5em 2em;
+	    border-radius: 20px;
+	    background-color: #d1d1d1;
+	    width: 75%;
+	}
+
+	.logo {
+	max-width: 110px;
+	}
+}
+
+/* desktops */
+@media only screen and (min-width: 992px) {
+	.logo {
+		max-width: 120px;
+	}
+}
+
+/* large desktops */
+@media only screen and (min-width:1200px){
+	footer {
+	padding: 2.5em;
+	}
+
+	.logo {
+		max-width: 150px;
+	}
+}	
+
+
+
+
+
+
+
+
+
