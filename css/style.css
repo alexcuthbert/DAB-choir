@@ -14,13 +14,74 @@ Version: 0.0.1
 
 /* Tiny screens - mobile users */
 
+/*BODY UNIVERSAL*/
 body {
 	background-color: #F6F7F8;
 }
+main {
+	margin-top: 132px;
+}
+
+
+/*HEADER*/
+header {
+	margin: 0em 0em;
+}
+
+.logo {
+	/*max-width: 80px;*/
+	max-height: 120px;
+}
+
+.blog-nav li {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.fixed-top {
+	max-width: 100%;
+	margin: auto;
+	background-color: white;
+}
+
+header a.brand h1:hover {
+	color: red;
+}
+header a.brand {
+	text-decoration: none;
+}
+.mob-hide {
+	visibility: hidden;
+	display: none;
+}
+
+/*TEXT*/
 p, li{
 	color: dimgrey;
 	font-size: 1.15em;
 }
+
+a:hover, a.active li {
+	color: red;
+}
+
+h1, h2, h3, h4 {
+	color: dimgrey;
+}
+
+h2.jumbo{
+	font-size:3em;
+	color: azure;
+}
+
+p.jumbo, li.jumbo, h3.jumbo, h1.jumbo {
+	color: white;
+}
+
+
+/*BUTTONS*/
 .primary, .btn-primary, .btn-outline-primary, a, .blog-nav li a {
 	color: #B33951;
 	border-color: #B33951;
@@ -32,35 +93,22 @@ p, li{
 	background-color: #B33951;
 }
 
+
+/*FOOTER*/
 footer {
 	background-color: #54494B;
 	padding: 1em;
 }
+.foot{
+	padding: 0em 4em;
 
-a:hover, a.active li {
-	color: red;
+}
+.foot li {
+	color: #D7D5D5;
 }
 
-header {
-	margin: 0em 0em;
-	padding: 1% 3%;
-}
 
-.home-content {
-	background-image: linear-gradient(
-		rgba(0, 0, 0, 0.9), 
-		rgba(0, 0, 0, 0.6)), 
-		url('../images/cropped-dhc1-1.jpg');
-	background-size: cover;
-	background-position: center;
-	height: 400px; 
-	padding: 2em 4em
-}
-
-.home-content p {
-		color: white;
-}
-
+/*FORMS*/
 .wpcf7-submit{
 
 	color: white;
@@ -84,37 +132,33 @@ header {
 	border-radius: 30px;
 	padding: 8px 20px;
 }
-.content-right {
-	text-align: right;
+input {
+	width:100%;
 }
 
-.foot{
-	padding: 0em 4em;
-
-}
-.foot li {
-	color: #D7D5D5;
-}
-
-.side {
-	padding-left: 6em ;
-}
-
-.logo {
-	max-width: 80px;
-}
-h1, h2, h3, h4 {
-	color: dimgrey;
+.wp-block-contact-form-7-contact-form-selector
+{
+    padding: 1.5em 2em;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #d1d1d1;
 }
 
 
-h2.jumbo{
-	font-size:3em;
-	color: azure;
+/*HOME*/
+.home-content {
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.9), 
+		rgba(0, 0, 0, 0.6)), 
+		url('../images/cropped-dhc1-1.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px; 
+	padding: 2em 4em
 }
 
-p.jumbo, li.jumbo, h3.jumbo, h1.jumbo {
-	color: white;
+.home-content p {
+		color: white;
 }
 
 .jumbotron, .front-banner {
@@ -129,14 +173,13 @@ p.jumbo, li.jumbo, h3.jumbo, h1.jumbo {
 	height: 400px;
 }
 
-.blog-nav li {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  font-weight: 400;
+.content-right {
+	text-align: right;
 }
 
-
+.side {
+	padding-left: 6em ;
+}
 
 .page {
 	margin : 0em 0em;
@@ -155,18 +198,7 @@ li.pag {
 }
 
 
-.wp-block-contact-form-7-contact-form-selector
-{
-    padding: 1.5em 2em;
-    border-radius: 20px;
-    width: 100%;
-    background-color: #d1d1d1;
 
-
-}
-input {
-	width:100%;
-}
  .carousel-inner {
  	max-height: 300px;
  	margin: auto;
@@ -176,14 +208,27 @@ input {
 	margin: 3em 0em 5em 0em;
 }
 
-/* small, not tiny */
+/*
+``````````````````````````````````
+RESPONSIVE STYLES
+
+`````````````````````````````````
+
+/* SMALL, not tiny */
 @media only screen and (min-width: 576px) {
 	.logo {
 		max-width: 100px;
 	}
+	.fixed-top {
+		max-width: 540px;
+	}
+	.mob-hide {
+	visibility: visible;
+	display: inline-block;
+	}
 }
 
-/* tablets */
+/* TABLET */
 @media only screen and (min-width: 768px) {
 	`.wp-block-contact-form-7-contact-form-selector {
 	    padding: 1.5em 2em;
@@ -193,31 +238,48 @@ input {
 	}
 
 	.logo {
-	max-width: 110px;
+		max-width: 110px;
+	}
+
+	.fixed-top {
+		max-width: 720px;
 	}
 }
 
-/* desktops */
+/* LARGE - DESKTOP or HORIZONTAL TABLET */
 @media only screen and (min-width: 992px) {
 	.logo {
 		max-width: 120px;
 	}
+	.fixed-top {
+	max-width: 960px;
+	}
+
 }
 
-/* large desktops */
+/* XLARGE - DESKTOP */
 @media only screen and (min-width:1200px){
 	footer {
 	padding: 2.5em;
 	}
 
-	.logo {
-		max-width: 150px;
+	.fixed-top {
+	max-width: 1140px;
 	}
 }	
 
 
 
+/* XLARGE - DESKTOP */
+@media only screen and (min-width:1400px){
+	footer {
+	padding: 2.5em;
+	}
 
+	.fixed-top {
+	max-width: 1320px;
+	}
+}	
 
 
 

@@ -2,12 +2,10 @@
 
 
 function start_practice02_scripts() {
-	wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+	wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 	wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
-
-	wp_enqueue_script('jquery', 'code.jquery.com/jquery-3.2.1.slim.min.js', array('json2'));
-	wp_enqueue_script('popper', 'cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', );
-	wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js');
+	wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js');
+ 
 }
 
 add_action( 'wp_enqueue_scripts', 'start_practice02_scripts' );
@@ -31,3 +29,9 @@ function revealid_id_column_content( $column, $id ) {
     echo $id;
   }
 }
+
+function wp_list_pages_filter($output) {
+  $output = str_replace('page_item', 'page_item nav-item nav-link', $output);
+  return $output;
+}
+add_filter('wp_list_pages', 'wp_list_pages_filter');

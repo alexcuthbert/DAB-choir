@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php bloginfo( 'description' ); ?>">
     <meta name="author" content="Derby & Burton Hospitals Choir">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<?php wp_head(); ?>
-
+	
 </head>
-
 <body>
-	<header class="container">
-		<div class="navbar navbar-expand-sm">
-			<div class="col-4 px-0 site-title">
 
-				<!-- MAY WANT TO CHANGE TO LOGO IMAGE-->
-				<img src="<?php echo get_template_directory_uri(); ?>/images/cropped-Choir-Logo-with-Title-1.png" class="logo">
-				<!--<h1><a href="<?= get_bloginfo('url'); ?>"><?= get_bloginfo('name'); ?></a></h1>-->
-				
-				<!-- <p><?= get_bloginfo('description'); ?></p> -->
-			</div>
-			<div class="col-8 content-right">
-				<nav class="navbar-expand-sm blog-nav">
-					<ul>
-						<?php wp_list_pages( '&title_li=' ); ?>
-					</ul>
-				</nav>
-			</div>
-		</div>
+<header class="container">
+	
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white p-4">
+<div class="d-inline-flex justify-content-start align-items-center">
+    <a href="<?= get_bloginfo('url'); ?>">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/cropped-Choir-Logo-with-Title-1.png" class="navbar-brand logo">
+    </a>
+    <div class="mob-hide">
+      <a href="<?= get_bloginfo('url'); ?>" class="brand">
+        <h1><?= get_bloginfo('name'); ?></h1>
+      </a>
+      <p><?= get_bloginfo('description'); ?></p>
+    </div>
+</div>
+
+<div class="d-inline-flex justify-content-end">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <?php wp_list_pages( '&title_li=' ); ?>
+      </ul>
+
+  </div>
+</nav>

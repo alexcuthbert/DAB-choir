@@ -1,8 +1,9 @@
 <!-- // MAIN WP PHP START -->
 
 		<?php get_header(); ?> 
+		
 	</header>
-	<main>
+
 <main>
 	<div class=" jumbotron jumbotron-fluid">
 		<div class="container">
