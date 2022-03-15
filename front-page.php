@@ -77,36 +77,52 @@
 				</div>
 			</div>
 			<div class="row pb-5">
-				<div class="col">
-						<div class="d-inline-flex"><p>Folow That Star:</p></div> 
-					<audio controls class="audio-ctrl">
-					  	<source src="<?= get_template_directory_uri(); ?>/audio/Follow-that-Star.mp3" type="audio/mpeg">
+				<div class="col-md-8">
+					<audio id="controls" controls class="audio-ctrl">
+					  	<source  id="current-audio" src="<?= get_template_directory_uri(); ?>/audio/Follow-that-Star.mp3" type="audio/mpeg">
 						Your browser does not support the audio element.
 					</audio>
+					<script type="text/javascript">
+						function getSiblings (e) {
+				           // for collecting siblings
+				            if(!e.parentNode) {
+				               return;
+				           }
+				           // first child of the parent node
+				           let sibling  = e.parentNode.firstChild;
+				           // collecting siblings
+				           while (sibling) {
+				            	if (sibling.nodeType === 1 && sibling !== e) {
+				            		// remove
+				            		classList.remove("active");
+				            	}
+				               sibling = sibling.nextSibling;
+				           }
+				       };
+							function changeAudio(e, newSource) {
+								getSiblings();
+								e.classList.add("active");
 
-					<!--
-						on click {
-							get clicked name
-							name = file source
-							set activeAudio to clicked item's 'name' attribute
-							insert name src for audio controls
+								document.getElementById('current-audio').src = '<?= get_template_directory_uri(); ?>/audio/' + newSource;
+								document.getElementById('controls').load();
+								document.getElementById('controls').play();
+								/*
+									Select 5-8 tracks to use
+									remove active from previous track(s)
 
-							also, have clas for active link, for UX
-
-							use name attr for inner html?
-
+								*/
 						}
+					</script>
+					</div>
 
-
-						onclick.event() ?								
-
-						setHTML
-						ID = activeAudio
-						innerHTML = audio controls, src=activeAudio
-
-						JS TO CHANGE SRC OF AUDIO CONTROLS WHEN LINKS ARE CLICKED
-					-->
-
+				<div class="col-md-4">
+					<ol>
+						<a href="#1" onclick="changeAudio(this, 'Follow-that-star.mp3');"><li>Follow That Star</li></a>
+						<a href="#1" onclick="changeAudio(this, 'Christmas-Lullaby.mp3');"><li>Christmas Lullaby</li></a>
+						<a href="#1" onclick="changeAudio(this, 'Calypso-Carol.mp3');"><li>Calypso Carol</li></a>
+						<a href="#1" onclick="changeAudio(this, 'Calypso-Carol.mp3');"><li>audio 2</li></a>
+					
+					</ol>
 				</div>
 			</div>
 

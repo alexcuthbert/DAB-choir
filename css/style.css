@@ -37,8 +37,8 @@ footer {
 	padding: 1em;
 }
 
-a:hover {
-	color: #F6F7F8;
+a:hover, a.active li {
+	color: red;
 }
 
 header {
