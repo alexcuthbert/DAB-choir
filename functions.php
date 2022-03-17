@@ -33,3 +33,15 @@ function wp_list_pages_filter($output) {
   return $output;
 }
 add_filter('wp_list_pages', 'wp_list_pages_filter');
+
+function twentytwenty_menus() {
+
+  $locations = array(
+    'primary'  => __( 'Primary Menu', 'twentytwenty' ),
+    'footer'   => __( 'Footer Menu', 'twentytwenty' ),
+  );
+
+  register_nav_menus( $locations );
+}
+
+add_action( 'init', 'twentytwenty_menus' );
