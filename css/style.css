@@ -1,8 +1,8 @@
 /*
 
-Theme Name: Practice
+Theme Name: DAB Hopitals Choir
 Author: Alex 
-Description: Practicing WP
+Description: DAB Hopitals Choir
 Version: 0.0.1
 
 
@@ -137,6 +137,9 @@ footer a:hover {
 	color: #D7D5D5;
 }
 
+footer p, footer li {
+	font-size: 0.9em;
+}
 
 /*FORMS*/
 .wpcf7-submit{
