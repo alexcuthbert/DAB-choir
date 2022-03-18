@@ -16,10 +16,6 @@
 			</div>
 		<!--</div>-->
 		<!-- 
-
-		3 part 'features'
-			est 83, raised over £170k to date, yearly xmas concert
-
 		about the choir (page content plugged in)
 
 		listen to us
@@ -30,11 +26,11 @@
 		-->
 
 		<section class="container">
-			<div class="row py-5">
+			<div class="row py-5 m-auto">
 				<div class="col-sm-4 m-auto">
 					<!-- custom fields? -->
 					<h3><?= get_field('bragging-1'); ?></h3>
-					<img src="<?= get_template_directory_uri(); ?>/images/Header8-150x150.png">
+					<img src="<?= get_field('image-1')?>">
 				</div>
 				<div class="col-sm-4 m-auto">
 					<h3><?= get_field('bragging-2'); ?></h3>

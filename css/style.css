@@ -101,6 +101,14 @@ p.jumbo, li.jumbo, h3.jumbo, h1.jumbo {
 	color: white;
 }
 
+ul.navbar-nav li.menu-item a {
+	text-decoration: none;
+}
+
+ul.navbar-nav li.menu-item a:hover {
+	text-decoration: underline;
+}
+
 
 /*BUTTONS*/
 .primary, .btn-primary, .btn-outline-primary, a, .blog-nav li a {
@@ -194,16 +202,17 @@ input {
 		color: white;
 }
 
-.jumbotron, .front-banner {
+.jumbotron, .front-banner, .title-banner {
 	/*text-align: right;*/
-	padding: 4em 6em;
+	/*margin: 4em 6em;*/
+	padding: 4em;
 	background-image: linear-gradient(
 		rgba(0, 0, 0, 0.7), 
 		rgba(0, 0, 0, 0.2)), 
 		url('../images/cropped-dhc1-1.jpg');
-	background-size: cover;
+	background-size:cover;
 	background-position: center;
-	height: 400px;
+	/*height: 400px;*/
 }
 
 .content-right {

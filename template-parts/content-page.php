@@ -1,7 +1,7 @@
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<div class=" jumbotron jumbotron-fluid">
-			<div class="container">
+	
+			<div class="container title-banner">
 				<div class="row">
 				
 					<div class="col">
@@ -12,10 +12,10 @@
 				
 				</div>
 			</div>
-		</div>
+	
 		<div class="container">
 			<div class="row">
-				<div class="col-8">
+				<div class="col-8 pt-5">
 <?=	 the_content(); 
 ?>
 </div>

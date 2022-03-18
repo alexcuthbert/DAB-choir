@@ -17,7 +17,7 @@ Footer
 -->
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<div class=" jumbotron jumbotron-fluid">
+	<div class=" jumbotron ">
 			<div class="container">
 				<div class="row">
 				
