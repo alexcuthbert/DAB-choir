@@ -31,18 +31,17 @@
 
 		<section class="container">
 			<div class="row py-5">
-				<div class="col-md-4 m-auto">
+				<div class="col-sm-4 m-auto">
 					<!-- custom fields? -->
-					<h3>things!</h3>
-					<img src="<?= get_template_directory_uri(); ?>/images/Header8-150x150.png">
-					<p></p>
-				</div>
-				<div class="col-md-4 m-auto">
-					<h3>things!</h3>
+					<h3><?= get_field('bragging-1'); ?></h3>
 					<img src="<?= get_template_directory_uri(); ?>/images/Header8-150x150.png">
 				</div>
-				<div class="col-md-4 m-auto">
-					<h3>things!</h3>
+				<div class="col-sm-4 m-auto">
+					<h3><?= get_field('bragging-2'); ?></h3>
+					<img src="<?= get_template_directory_uri(); ?>/images/Header8-150x150.png">
+				</div>
+				<div class="col-sm-4 m-auto">
+					<h3><?= get_field('bragging-3'); ?></h3>
 					<img src="<?= get_template_directory_uri(); ?>/images/Header8-150x150.png">
 				</div>									
 			</div>
@@ -83,9 +82,9 @@
 						Your browser does not support the audio element.
 					</audio>
 					<script type="text/javascript">
-						function getSiblings (e) {
+						function getSiblings (event) {
 				           // for collecting siblings
-				            if(!e.parentNode) {
+				            if(!this.parentNode) {
 				               return;
 				           }
 				           // first child of the parent node
@@ -99,9 +98,9 @@
 				               sibling = sibling.nextSibling;
 				           }
 				       };
-							function changeAudio(e, newSource) {
+							function changeAudio(event, newSource) {
 								getSiblings();
-								e.classList.add("active");
+								event.classList.add("active");
 
 								document.getElementById('current-audio').src = '<?= get_template_directory_uri(); ?>/audio/' + newSource;
 								document.getElementById('controls').load();
