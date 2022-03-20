@@ -34,11 +34,11 @@
 				</div>
 				<div class="col-sm-4 m-auto">
 					<h3><?= get_field('bragging-2'); ?></h3>
-					<img src="<?= get_template_directory_uri(); ?>/images/Header8-150x150.png">
+					<img src="<?= get_field('image-2')?>">
 				</div>
 				<div class="col-sm-4 m-auto">
 					<h3><?= get_field('bragging-3'); ?></h3>
-					<img src="<?= get_template_directory_uri(); ?>/images/Header8-150x150.png">
+					<img src="<?= get_field('image-3')?>">
 				</div>									
 			</div>
 		</section>

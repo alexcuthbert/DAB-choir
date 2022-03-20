@@ -18,7 +18,7 @@ Version: 0.0.1
 body {
 	background-color: white;
 }
-main {
+main, main.page {
 	margin-top: 100px;
 }
 

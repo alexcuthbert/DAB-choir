@@ -1,6 +1,6 @@
 
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php //post_class(); ?> class="pt-4 pb-3 mb-3" id="post-<?php the_ID(); ?>">
 <?php 
 get_template_part( 'template-parts/featured-image')
 	?>
