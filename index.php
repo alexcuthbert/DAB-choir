@@ -1,9 +1,6 @@
-<!-- // MAIN WP PHP START -->
-
 		<?php get_header(); ?> 
 		
 	</header>
-
 <main>
 	<div class="container title-banner">
 
@@ -17,14 +14,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8">
-				<?php 	 
-					// Start “The Loop”
-					if ( have_posts() ) : while (  have_posts() ) : the_post(); 
-						get_template_part( 'template-parts/content', get_post_type() ); ?> 
-		    			<hr>
+				<?php if ( have_posts() ) : while (  have_posts() ) : the_post(); 
+					get_template_part( 'template-parts/content', get_post_type() ); ?> 
+						<hr>
 					<?php endwhile; ?>
-					</div>
-			
+			</div>
 					<?php get_sidebar(); ?>
 					<nav>
 						<ul class="pager">
