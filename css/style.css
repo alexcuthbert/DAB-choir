@@ -1,7 +1,7 @@
 /*
 
 Theme Name: DAB Hopitals Choir
-Author: Alex 
+Author: Alex C
 Description: DAB Hopitals Choir
 Version: 0.0.1
 
@@ -122,6 +122,13 @@ ul.navbar-nav li.menu-item a:hover {
 	background-color: #B33951;
 }
 
+/* Sections */
+.feature-wrapper .feature {
+	width: 250px;
+}
+.audio {
+	
+}
 
 /*FOOTER*/
 footer {
@@ -268,10 +275,12 @@ RESPONSIVE STYLES
 	.fixed-top {
 		max-width: 540px;
 	}
-	.mob-hide {
-	visibility: visible;
-	display: inline-block;
+
+	.feature-wrapper .feature {
+		width: 150px;
 	}
+
+
 }
 
 /* TABLET */
@@ -293,6 +302,10 @@ RESPONSIVE STYLES
 	.fixed-top {
 		max-width: 720px;
 	}
+	.mob-hide {
+		visibility: visible;
+		display: inline-block;
+	}
 }
 
 /* LARGE - DESKTOP or HORIZONTAL TABLET */
@@ -306,6 +319,10 @@ RESPONSIVE STYLES
 	.fixed-top {
 		max-width: 960px;
 	}
+	.feature-wrapper .feature {
+		width: 250px;
+	}
+
 
 }
 

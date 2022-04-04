@@ -23,3 +23,16 @@
   </div>
 </div>
 <!-- /.blog-sidebar -->
+
+
+<!--
+        <div class="col-md-4 my-5 pb-5">
+          <h2 class="text-center">Rehearse with us</h2>
+          <p>
+            it could be fun... <br>why not? please? <br>well, there's no ned to be rude... <br>you know what? forget it! we dont need you!.
+          </p>
+          <div class="text-right">
+            <a href="" class="btn btn-outline-primary">Join us today</a>
+          </div>
+        </div>
+      -->

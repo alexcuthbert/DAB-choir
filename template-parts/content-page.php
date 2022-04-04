@@ -14,13 +14,10 @@
 			</div>
 	
 		<div class="container">
-			<div class="row">
-				<div class="col-8 pt-5">
+			
 <?=	 the_content(); 
 ?>
 </div>
-	<?php get_sidebar(); ?>
-		</div>
+	<?php //get_sidebar(); ?>
 
-	</div>
 </article>
